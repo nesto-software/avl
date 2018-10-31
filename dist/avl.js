@@ -1,5 +1,5 @@
 /**
- * @nesto-software/avl v1.4.4
+ * @nesto-software/avl v1.4.5
  * Fast AVL tree for Node and browser
  *
  * @author Alexander Milevski <info@w8r.name>
@@ -719,8 +719,8 @@
           if (!currentStartingNode) { currentStartingNode = node; }
 
           var stack = [];
-          if (node.left) { stack.push(currentStartingNode.left); }
-          if (node.right) { stack.push(currentStartingNode.right); }
+          if (currentStartingNode.left) { stack.push(currentStartingNode.left); }
+          if (currentStartingNode.right) { stack.push(currentStartingNode.right); }
           var index = 0;
           while (index < stack.length) {
             var currentElement = stack[index];
