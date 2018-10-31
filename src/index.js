@@ -595,8 +595,8 @@ export default class AVLTree {
           if (!currentStartingNode) currentStartingNode = node;
 
           var stack = [];
-          if (node.left) stack.push(currentStartingNode.left);
-          if (node.right) stack.push(currentStartingNode.right);
+          if (currentStartingNode.left) stack.push(currentStartingNode.left);
+          if (currentStartingNode.right) stack.push(currentStartingNode.right);
           var index = 0;
           while (index < stack.length) {
             var currentElement = stack[index];
