@@ -42,6 +42,7 @@
     "template-curly-spacing": 0,
     "object-property-newline": 0,
     "no-restricted-syntax": 0,
-    "no-labels": 0
+    "no-labels": 0,
+    "no-await-in-loop": 0
   }
 }

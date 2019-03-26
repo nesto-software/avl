@@ -19,15 +19,6 @@ export default [{
   input: 'src/index.js',
   output: {
     format: 'umd',
-    file: 'dist/avl.js',
-    name, banner,
-    sourcemap: true,
-  },
-  plugins: [ buble() ]
-}, {
-  input: 'src/index.js',
-  output: {
-    format: 'umd',
     file: 'dist/avl.es6.js',
     name, banner,
     sourcemap: true,
